@@ -1,6 +1,18 @@
+// Портнеры индекс
 .partners {
-    display: flex;
-    gap: 30px;
+    &__grid {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
 
     &__link:focus {
         outline: var(--outline-foc);
