@@ -754,13 +754,13 @@ p:last-child {
   align-items: center;
 }
 
-.button__hero:hover, .button__modal:hover {
+.button__footer-form:hover, .button__footer-form:hover, .button__hero:hover, .button__modal:hover {
   background-color: var(--btn-bg-cl-hiro);
   animation-play-state: paused;
   animation: swing-stop 2ms;
 }
 
-.button__hero:focus, .button__modal:focus {
+.button__footer-form:focus, .button__footer-form:focus, .button__hero:focus, .button__modal:focus {
   background-color: var(--btn-bg-cl-hiro);
   outline: var(--outline-foc);
 }
