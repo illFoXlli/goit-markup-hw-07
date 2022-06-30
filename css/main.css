@@ -1447,8 +1447,11 @@ p:last-child {
 
 .contaent-box {
   display: block;
+  max-width: 368px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px 24px;
-  border: 1px solid var(--cl-border);
+  outline: 1px solid var(--cl-border);
 }
 
 .contaent-box__titel {
