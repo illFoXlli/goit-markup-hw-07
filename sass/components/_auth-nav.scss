@@ -1,0 +1,53 @@
+.auth-nav {
+    display: flex;
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+
+        color: var(--secondary-txt-cl);
+
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        transition-property: color;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+    }
+
+    &__envelope-svg,
+    &__contact-svg {
+        transition-property: fill;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+    }
+    &__link:focus .auth-nav__envelope,
+    &__link:hover .auth-nav__envelope {
+        fill: var(--main-bg-cl);
+    }
+
+    &__link:focus .auth-nav__contact,
+    &__link:hover .auth-nav__contact {
+        fill: var(--main-bg-cl);
+    }
+
+    &__link:focus,
+    &__link:hover {
+        color: var(--main-bg-cl);
+        outline: var(--outline-foc);
+    }
+    &--indent {
+        margin-left: auto;
+        gap: 30px;
+    }
+}

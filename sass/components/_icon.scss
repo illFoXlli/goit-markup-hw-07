@@ -1,0 +1,57 @@
+.icon {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 10px;
+
+    cursor: pointer;
+
+    &__element {
+        display: flex;
+        width: 44px;
+        height: 44px;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        transition-property: background-color;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-hov-foc);
+    }
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        transition-property: background-color;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+    }
+    &__svg {
+        fill: var(--bg-card-link-svg);
+
+        transition-property: fill;
+        transition-duration: var(--time-hov-foc);
+        transition-timing-function: var(--time-cubic);
+    }
+    &__link:focus {
+        background-color: var(--main-bg-cl);
+        outline-color: var(--secondary-bg-cl);
+    }
+    &__link:focus .icon__svg {
+        fill: var(--secondary-bg-cl);
+    }
+    &__link:hover {
+        background-color: var(--main-bg-cl);
+    }
+    &__link:hover .icon__svg {
+        fill: var(--secondary-bg-cl);
+    }
+}
