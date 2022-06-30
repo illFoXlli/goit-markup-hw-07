@@ -1,21 +1,21 @@
 .card {
     padding-top: 30px;
     padding-bottom: 30px;
+}
 
-    &__people {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
+.card__people {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
 
-        margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+}
 
-    &__work {
-        color: var(--secondary-txt-cl);
+.card__work {
+    color: var(--secondary-txt-cl);
 
-        font-size: 16px;
-        line-height: 1.19;
+    font-size: 16px;
+    line-height: 1.19;
 
-        margin-bottom: 16px;
-    }
+    margin-bottom: 16px;
 }

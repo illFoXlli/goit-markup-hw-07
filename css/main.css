@@ -488,7 +488,8 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
-.auth-nav__envelope-svg, .auth-nav__contact-svg {
+.auth-nav__envelope-svg,
+.auth-nav__contact-svg {
   transition-property: fill;
   transition-duration: var(--time-hov-foc);
   transition-timing-function: var(--time-cubic);
@@ -504,7 +505,8 @@ p:last-child {
   fill: var(--main-bg-cl);
 }
 
-.auth-nav__link:focus, .auth-nav__link:hover {
+.auth-nav__link:focus,
+.auth-nav__link:hover {
   color: var(--main-bg-cl);
   outline: var(--outline-foc);
 }
@@ -754,13 +756,17 @@ p:last-child {
   align-items: center;
 }
 
-.button__footer-form:hover, .button__footer-form:hover, .button__hero:hover, .button__modal:hover {
+.button__footer-form:hover,
+.button__hero:hover,
+.button__modal:hover {
   background-color: var(--btn-bg-cl-hiro);
   animation-play-state: paused;
   animation: swing-stop 2ms;
 }
 
-.button__footer-form:focus, .button__footer-form:focus, .button__hero:focus, .button__modal:focus {
+.button__footer-form:focus,
+.button__hero:focus,
+.button__modal:focus {
   background-color: var(--btn-bg-cl-hiro);
   outline: var(--outline-foc);
 }
@@ -922,6 +928,11 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
+.icon__link:focus, .icon__link:hover {
+  background-color: var(--main-bg-cl);
+  outline-color: var(--secondary-bg-cl);
+}
+
 .icon__svg {
   fill: var(--bg-card-link-svg);
   transition-property: fill;
@@ -929,26 +940,9 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
-.icon__link:focus {
-  background-color: var(--main-bg-cl);
-  outline-color: var(--secondary-bg-cl);
-}
-
+.icon__link:hover .icon__svg,
 .icon__link:focus .icon__svg {
   fill: var(--secondary-bg-cl);
-}
-
-.icon__link:hover {
-  background-color: var(--main-bg-cl);
-}
-
-.icon__link:hover .icon__svg {
-  fill: var(--secondary-bg-cl);
-}
-
-.partners__grid {
-  display: flex;
-  gap: 30px;
 }
 
 .partners__title {
@@ -957,6 +951,11 @@ p:last-child {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.partners__grid {
+  display: flex;
+  gap: 30px;
 }
 
 .partners__link:focus {
@@ -1061,7 +1060,8 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
-.address__link:focus, .address__link:hover {
+.address__link:focus,
+.address__link:hover {
   color: var(--main-bg-cl);
 }
 
@@ -1079,7 +1079,8 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
-.address__link:focus, .address__link:hover {
+.address__link:focus,
+.address__link:hover {
   color: var(--main-bg-cl);
 }
 
@@ -1109,7 +1110,8 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
-.address__link-contact:hover, .address__link-contact:focus {
+.address__link-contact:hover,
+.address__link-contact:focus {
   color: var(--main-bg-cl);
   outline: vap(--outline-foc);
 }
@@ -1180,13 +1182,13 @@ p:last-child {
   transition-timing-function: var(--time-cubic);
 }
 
+.backdrop__is-hidden .modal {
+  transform: translate(-50%, 50%) scale(0.3);
+}
+
 .backdrop__is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-
-.backdrop__is-hidden .modal {
-  transform: translate(-50%, 50%) scale(0.3);
 }
 
 .modal {
@@ -1222,6 +1224,7 @@ p:last-child {
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
+  outline-color: #2196f3;
 }
 
 .modal__icon-close {
@@ -1237,7 +1240,7 @@ p:last-child {
   --color3: #2196f3;
 }
 
-.modal__button-close:focus-visible .modal-icon-close-svg {
+.modal__button-close:focus-visible .modal__icon-close {
   --color3: #2196f3;
 }
 

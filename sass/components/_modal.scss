@@ -39,6 +39,7 @@
         border-radius: 50%;
 
         cursor: pointer;
+          outline-color: #2196f3; 
     }
 
     &__icon-close {
@@ -55,8 +56,9 @@
         --color3: #2196f3;
     }
 
-    &__button-close:focus-visible .modal-icon-close-svg {
+    &__button-close:focus-visible .modal__icon-close {
         --color3: #2196f3;
+      
     }
 
     &__title {

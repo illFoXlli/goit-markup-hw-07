@@ -6,50 +6,52 @@
 
   margin-top: 20px;
   margin-bottom: 30px;
+}
 
-  &__input:focus-visible ~ &__position > &__icon {
-    --color3: var(--bg-checkbox-icon-blue);
-  }
-  &__input:focus-visible {
-    outline-color: var(--main-bg-cl);
-  }
-  &__position {
-    position: relative;
-  }
+.checkbox__input:focus-visible ~ .checkbox__position > .checkbox__icon {
+  --color3: var(--bg-checkbox-icon-blue);
+}
 
-  &__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, -50%);
-    --color1: var(--bg-checkbox-icon-white);
-    --color2: var(--bg-checkbox-icon-white);
-    --color3: var(--bg-checkbox-icon-black);
-  }
+.checkbox__input:focus-visible {
+  outline-color: var(--main-bg-cl);
+}
 
-  &__icon:focus {
-    --color1: var(--bg-checkbox-icon-white);
-    --color2: var(--bg-checkbox-icon-white);
-    --color3: var(--bg-checkbox-icon-black);
-  }
+.checkbox__position {
+  position: relative;
+}
 
-  &__input:checked ~ .checkbox__position > .checkbox__icon {
-    --color1: var(--bg-checkbox-icon-blue);
-    --color2: var(--bg-checkbox-icon-white);
-    --color3: var(--bg-checkbox-icon-blue);
-  }
+.checkbox__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, -50%);
+  --color1: var(--bg-checkbox-icon-white);
+  --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-black);
+}
 
-  &__input:focus ~ .checkbox__position > .checkbox__icon {
-    --color3: var(--bg-checkbox-icon-blue);
-  }
+.checkbox__icon:focus {
+  --color1: var(--bg-checkbox-icon-white);
+  --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-black);
+}
 
-  &__text {
-    color: var(--bg-form-cl);
-    margin-left: 8px;
-  }
+.checkbox__input:checked ~ .checkbox__position > .checkbox__icon {
+  --color1: var(--bg-checkbox-icon-blue);
+  --color2: var(--bg-checkbox-icon-white);
+  --color3: var(--bg-checkbox-icon-blue);
+}
 
-  &__link-text {
-    color: var(--main-bg-cl);
-    text-decoration-line: underline;
-  }
+.checkbox__input:focus ~ .checkbox__position > .checkbox__icon {
+  --color3: var(--bg-checkbox-icon-blue);
+}
+
+.checkbox__text {
+  color: var(--bg-form-cl);
+  margin-left: 8px;
+}
+
+.checkbox__link-text {
+  color: var(--main-bg-cl);
+  text-decoration-line: underline;
 }
