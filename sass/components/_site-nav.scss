@@ -27,7 +27,22 @@
     }
 }
 
-.site-nav__link--current::after {
+
+
+.site-nav--indent-left {
+    margin-left: 93px;
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &--current::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -42,18 +57,6 @@
     border-radius: 2px;
 }
 
-.site-nav--indent-left {
-    margin-left: 93px;
-}
-
-.site-nav__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.site-nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .site-nav__item {
