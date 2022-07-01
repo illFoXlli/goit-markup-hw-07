@@ -1,4 +1,28 @@
 // адресс в футоре
+.address {
+    &__link:focus,
+    &__link:hover {
+        color: var(--main-bg-cl);
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link:focus,
+    &__link:hover {
+        color: var(--main-bg-cl);
+    }
+
+    &__link-contact:hover,
+    &__link-contact:focus {
+        color: var(--main-bg-cl);
+        outline: vap(--outline-foc);
+    }
+
+    &__link-contact:hover {
+        color: var(--main-bg-cl);
+    }
+}
 
 .address__item:not(:last-child) {
     margin-bottom: 9px;
@@ -15,14 +39,6 @@
     transition-timing-function: var(--time-cubic);
 }
 
-.address__link:focus,
-.address__link:hover {
-    color: var(--main-bg-cl);
-}
-.address__item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
 .address__link {
     font-style: normal;
     color: var(--light-txt-cl-white);
@@ -32,11 +48,6 @@
     transition-property: color;
     transition-duration: var(--time-hov-foc);
     transition-timing-function: var(--time-cubic);
-}
-
-.address__link:focus,
-.address__link:hover {
-    color: var(--main-bg-cl);
 }
 
 .address__link-contact {
@@ -51,9 +62,6 @@
     display: block;
     margin-bottom: 9px;
 }
-.address__link-contact:hover {
-    color: var(--main-bg-cl);
-}
 
 .address__link-contact {
     font-style: normal;
@@ -64,10 +72,4 @@
     transition-property: color;
     transition-duration: var(--time-hov-foc);
     transition-timing-function: var(--time-cubic);
-}
-
-.address__link-contact:hover,
-.address__link-contact:focus {
-    color: var(--main-bg-cl);
-    outline: vap(--outline-foc);
 }

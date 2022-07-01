@@ -15,7 +15,11 @@
     margin-right: auto;
     padding: 200px 0;
 
-    &__title {
+  
+}
+
+
+ .hero__title {
         color: var(--light-txt-cl-white);
 
         font-weight: 900;
@@ -28,7 +32,6 @@
         animation: text-flicker-in-glow 3000ms;
         animation-fill-mode: forwards;
     }
-}
 
 
 @keyframes swing {

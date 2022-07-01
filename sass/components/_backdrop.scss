@@ -10,15 +10,13 @@
     transition-property: opacity;
     transition-duration: var(--time-hov-foc);
     transition-timing-function: var(--time-cubic);
+}
+.backdrop__is-hidden {
+    opacity: 0;
 
- 
+    pointer-events: none;
 
-    &__is-hidden .modal {
+    &.modal {
         transform: translate(-50%, 50%) scale(0.3);
     }
 }
- .backdrop__is-hidden {
-        opacity: 0;
-
-        pointer-events: none;
-    }

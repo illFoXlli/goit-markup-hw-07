@@ -14,10 +14,6 @@
     gap: 30px;
 }
 
-.partners__link:focus {
-    outline: var(--outline-foc);
-    border: 1px solid var(--main-bg-cl);
-}
 .partners__link {
     display: flex;
     justify-content: center;
@@ -31,16 +27,21 @@
 
     transition: border-color var(--time-hov-foc) var(--time-cubic);
 
-&:focus .partners__svg {
-    fill: var(--main-bg-cl);
-}
+    &:focus .partners__svg {
+        fill: var(--main-bg-cl);
+    }
 
-&:hover {
-    border: 1px solid var(--main-bg-cl);
-}
-&:hover .partners__svg {
-    fill: var(--main-bg-cl);
-}
+    &:hover {
+        border: 1px solid var(--main-bg-cl);
+    }
+    &:hover .partners__svg {
+        fill: var(--main-bg-cl);
+    }
+
+    &:focus {
+        outline: var(--outline-foc);
+        border: 1px solid var(--main-bg-cl);
+    }
 }
 
 .partners__svg {
